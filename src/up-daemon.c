@@ -923,12 +923,14 @@ fire_timeout_callback (gpointer user_data)
 static guint
 calculate_timeout (UpDevice *device)
 {
-	UpDeviceLevel warning_level;
+	return 5;
+/*	UpDeviceLevel warning_level;
 
 	g_object_get (G_OBJECT (device), "warning-level", &warning_level, NULL);
 	if (warning_level >= UP_DEVICE_LEVEL_DISCHARGING)
 		return 30;
 	return 120;
+*/
 }
 
 void
